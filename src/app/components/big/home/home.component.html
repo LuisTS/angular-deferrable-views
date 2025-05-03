@@ -1,0 +1,18 @@
+<p>home works!</p>
+@defer (on timer(6000)) {
+<app-big></app-big>
+} @placeholder {
+<div class="placeholder">Contenido por defecto del componente big</div>
+}@loading {
+<div class="loading">Cargando...</div>
+} @error {
+<div class="error">Error al cargar el componente</div>
+} @defer (on timer(2000)) {
+<app-huge></app-huge>
+} @placeholder {
+<div class="placeholder">Contenido por defecto del componente huge</div>
+}@loading {
+<div class="loading">Cargando...</div>
+} @error {
+<div class="error">Error al cargar el componente</div>
+}
